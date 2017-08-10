@@ -1,5 +1,8 @@
 FROM composer
 
+ENV PATH "/tmp/vendor/bin:$PATH"
+ENV COMPOSER_HOME /tmp
+
 ENV PACKAGE="friendsofphp/php-cs-fixer" VERSION=">=2.3 <2.4"
 
 RUN composer global require ${PACKAGE}:"${VERSION}" \
