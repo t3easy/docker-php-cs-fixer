@@ -1,6 +1,6 @@
 FROM t3easy/composer:1-php-7.2
 
-ENV PACKAGE="friendsofphp/php-cs-fixer" VERSION=">=2.2 <2.3"
+ENV PACKAGE="friendsofphp/php-cs-fixer" VERSION=">=2.12 <2.13"
 
 RUN composer global require ${PACKAGE}:"${VERSION}" \
     && composer clear-cache

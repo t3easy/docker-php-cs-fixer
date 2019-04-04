@@ -1,7 +1,4 @@
-FROM composer
-
-ENV PATH "/tmp/vendor/bin:$PATH"
-ENV COMPOSER_HOME /tmp
+FROM t3easy/composer:1-php-7.2
 
 ENV PACKAGE="friendsofphp/php-cs-fixer" VERSION=">=2.3 <2.4"
 
